@@ -7,5 +7,8 @@ public class C03Str {
 		int c = 3;
 		int sum = a + b + c;
 		System.out.printf("sum: %d\n", sum);
+		
+		String sumStr = "" + sum;
+		System.out.println(sumStr);
 	}
 }
