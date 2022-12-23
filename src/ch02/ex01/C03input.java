@@ -7,7 +7,7 @@ public class C03input {
 		
 		System.out.print("숫자를 입력하세요.\n>");
 		Scanner sc = new Scanner(System.in);
-		//int i = sc.nextInt();
+		int i = sc.nextInt();
 		System.out.println(sc + "을 입력했습니다.");		
 		
 		/*		
