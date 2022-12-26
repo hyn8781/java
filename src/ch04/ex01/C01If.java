@@ -1,8 +1,7 @@
 package ch04.ex01;
 
 public class C01If {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		int visitCnt = 0;
 		
 		if(visitCnt < 1) {

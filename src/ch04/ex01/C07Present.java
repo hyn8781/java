@@ -6,13 +6,10 @@ public class C07Present {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int mainChoice = 0,
-			subChoice = 0;
+		int mainChoice, subChoice = 0;		
+		String prize, maker = "";
 		
-		String prize = "",
-			   maker = "";
-		
-		System.out.println("1.냉장고, 2.세탁기\n> ");
+		System.out.print("1.냉장고, 2.세탁기\n> ");
 		mainChoice = sc.nextInt();
 		
 		if(mainChoice == 1) prize = "냉장고";

@@ -11,6 +11,8 @@ public class C03String {
 		String sumStr = "" + sum;
 		System.out.println(sumStr);
 		
+		int i = Integer.parseInt(sum);
+		
 		String s = a + b + "";
 		System.out.println(s);
 		
