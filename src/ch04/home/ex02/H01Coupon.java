@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class H01Coupon {
 	public static void main(String[] args) {		
 		Scanner sc = new Scanner(System.in);
-		
 		int grade = sc.nextInt();
 		String coupon = ""; 
 		
@@ -26,7 +25,4 @@ public class H01Coupon {
 		System.out.println(coupon);
 	}
 }
-
-/*
-과제: ch04.ex02.C01Switch 를 if로 refactoring 하라.
-*/
+/* 과제: ch04.ex02.C01Switch 를 if로 refactoring 하라. */

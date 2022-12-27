@@ -1,11 +1,7 @@
 package ch04.home.ex05;
 
 public class H02_369 {
-	public static void main(String[] args) {
-		/*for(int i = 1; i < 100; i++) {
-			System.out.print(" " + i);
-			switch(i % 3 == 0) System.out.print("짝");*/
-			
+	public static void main(String[] args) {		
 			int tens = 0;
 			int ones = 0;
 			
@@ -18,23 +14,17 @@ public class H02_369 {
 				if(ones != 0 && ones % 3 == 0) System.out.print("짝");
 				
 				if(i % 10 == 0) System.out.println();
-			}
-			
-			
-			
-			
-		}
-	}
+			}	
+	}		
 }
 /*
 과제: 369 게임을 하라.
-숫자는 1 이상 99이하이다.
+숫자는 1이상 99이하이다.
 10단위로 새로운 줄에 출력하라.
 --
 
 1 2 3짝 4 5 6짝 7 8 9짝 10
 11 12 13짝 14 15 16짝 17 18 19짝 20
-21
-
+...
 91짝 92짝 93짝짝 94짝 95짝 96짝짝 97짝 98짝 99짝짝
 */

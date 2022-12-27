@@ -11,11 +11,9 @@ public class H01OneNum {
 			System.out.print("> ");
 			isGood = sc.nextLine().matches("[1-9]");
 			if(!isGood) System.out.println("한자리 자연수를 입력하세요.");
-		} while(!isGood); 
+		} while(!isGood); // while() 괄호안의 조건에 부합하면 다시 do를 실행한다.
 		
 		System.out.println("끝.");
 	}
 }
-/*
-과제: 한자리 자연수를 입력받아라.
-*/
+/* 과제: 한자리 자연수를 입력받아라. */

@@ -5,20 +5,19 @@ import java.util.Scanner;
 public class H02Calculater {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		boolean isGood = false;
 		int a = 0;
 		int b = 0;
-		String op = "";
 		int result = 0;
-		
+		String op = "";
 		String tmp = "";
-		boolean isGood = false;
 		String errMsg = "input 0 or natural number.";
 		
 		do {
 			do {
-				isGood = false;
+				isGood = false; // 초기화
 				System.out.print("a: "); tmp = sc.nextLine();
-				isGood = tmp.matches("[0-9]+"); //*영글자이상 +한글자이상
+				isGood = tmp.matches("[0-9]+"); // 괄호안의 "*"표시는 글자수제한표시로 0글자 이상을 "+"한글자 이상을 의미한다.
 				if(isGood) a = Integer.parseInt(tmp);
 				else System.out.println(errMsg);
 			} while(!isGood);
@@ -26,14 +25,14 @@ public class H02Calculater {
 			do {
 				isGood = false;
 				System.out.print("op: "); op = sc.nextLine();
-				isGood = op.matches("[+-/\\*]");// regular expression 정규식에서 *은 뜻을가지고있다 일반문자화 \\ 2개
+				isGood = op.matches("[+-/\\*]"); // regular expression(정규식)에서 "*"는 이미 기능을 가지고있어서 \\를 사용해서 일반문자화 해야한다.
 				if(!isGood) System.out.println("input one of them(+, -, *, /)."); 
 			} while(!isGood);
 			
 			do {
 				isGood = false;
 				System.out.print("b: "); tmp = sc.nextLine();
-				isGood = tmp.matches("[0-9]+"); //*영글자이상 +한글자이상
+				isGood = tmp.matches("[0-9]+");
 				if(isGood) b = Integer.parseInt(tmp);
 				else System.out.println(errMsg);
 			} while(!isGood);
@@ -54,10 +53,12 @@ public class H02Calculater {
 }
 /*
 과제: 계산기를 만들어라.
-연산자는 +,-,*,/ 이다.
-/ 는 몫만을 구한다.
+연산자는 +, -, *, /이다.
+ /는 몫만을 구한다.
+input a 와 b는 0 또는 자연수일것.
+continue(y/n)? 에서 y 또는 Y 입력시 재수행한다.
+User가 다른 대답을 할 시 예외처리로서 입력값을 다시 물어본다.
 --
-예외처리해야됨 hello 입력하면 다시 a갑 물어봐야됨
 a: 1 
 op: +
 b: 2
@@ -69,8 +70,4 @@ b: 2
 2 * 2 = 4
 continue(y/n)? n
 end.
-+입력값  a,b는 0또는 자연수일것. 
-
-continue(y/n)? 에서 y 또는 Y를 입력하면 계산 작업을 재수행한다.
-y 또는 Y 외를 입력하면 앱을 종료한다.
 */
